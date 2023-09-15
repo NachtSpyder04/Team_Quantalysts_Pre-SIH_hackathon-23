@@ -1,33 +1,33 @@
-import { AppBar, Button, Drawer, Tab, Tabs, Toolbar, Typography } from '@mui/material'
+import { AppBar, Button, CssBaseline, Tab, Tabs, Toolbar, Typography } from '@mui/material'
 import React, { useState } from 'react'
-
-
+import AddIcon from '@mui/icons-material/Add';
+import GavelIcon from '@mui/icons-material/Gavel';
 
 
 const Header = () => {
-    const[value,setValue]= useState();
+    
     
   return (
    <React.Fragment>
-    <AppBar sx={{background:'#000125'}}>
+    <CssBaseline>
+    <AppBar sx={{background:'#000125'}} position='stick'>
         <Toolbar>
+            <GavelIcon sx={{marginRight:'10px'}}/>
             <Typography>
-                Test
+                MY_WEBSITE
             </Typography>
-            <Tabs textColor="inherit"indicatorColor="secondary" value={value} onChange={(e,value)=>setValue(value)} sx={{marginLeft:'100px'}}>
-                <Tab label="1111"/>
-                <Tab label="222"/>
-                <Tab label="3333"/>
-
-            </Tabs>
-            <Button sx={{marginLeft:'auto'}}variant="contained"> Login {" "}</Button>
-            <Button sx={{marginLeft:'20px'}}variant="contained"> Signup{" "} </Button>
+            
+            <Button sx={{marginLeft:'auto'}}variant="contained"> 
+            <AddIcon/>
+            Add</Button>
+            
            
         </Toolbar>
       
         
       
     </AppBar>
+    </CssBaseline>
    </React.Fragment>
   )
 }

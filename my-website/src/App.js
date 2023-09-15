@@ -1,12 +1,14 @@
 import React from "react";
-import Header from "./header";
+
+import Parent_component from "./parent_component";
 
 function App() {
   return (
     <div >
-     <Header/>
-      
+       <Parent_component/>
     </div>
+      
+  
   );
 }
 
