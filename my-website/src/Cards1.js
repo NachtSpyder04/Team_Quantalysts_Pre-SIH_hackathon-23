@@ -1,4 +1,4 @@
-import { Box, Button, Card, CardActions, CardContent, Container, Grid, Typography, TextField } from '@mui/material';
+import { Box, Button, Card, CardActions, CardContent, Container, Grid, Typography, TextField, CardActionArea } from '@mui/material';
 import React from 'react'
 
 
@@ -8,8 +8,9 @@ const Cards1 = () => {
     <Grid>
 
     
-    <TextField fullWidth label="Search here" varient="filled"/>
-    <Card sx={{ minWidth: 275 }}>
+    <TextField fullWidth label="Search here" variant='filled' />
+    <CardActionArea>
+    <Card  varient="outlined" sx={{ minWidth: 275}}>
       <CardContent>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
           Case number: 1-23
@@ -29,8 +30,9 @@ const Cards1 = () => {
         <Button size="small">Learn More</Button>
       </CardActions>
     </Card>
-
-    <Card sx={{ minWidth: 275 }}>
+    </CardActionArea>
+    <CardActionArea>
+    <Card variant="outlined" sx={{ minWidth: 275 }}>
       <CardContent>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
           Case number: 1-23
@@ -50,6 +52,7 @@ const Cards1 = () => {
         <Button size="small">Learn More</Button>
       </CardActions>
     </Card>
+    </CardActionArea>
 
     </Grid>
     

@@ -13,11 +13,7 @@ const Parent_component = () => {
         <Header/>
         
         <Box fixed sx={{bgcolor:'#F1F1F1'}}>
-            <BasicTabs/>
-               
-
-            
-                
+            <BasicTabs/>   
         </Box>
         
         

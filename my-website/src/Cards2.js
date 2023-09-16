@@ -1,5 +1,5 @@
 import { Search } from '@mui/icons-material';
-import { Box, Button, Card, CardActions, CardContent, Container, Grid, InputAdornment, TextField, Typography } from '@mui/material';
+import { Box, Button, Card, CardActions, CardContent, CardActionArea, Grid, InputAdornment, TextField, Typography } from '@mui/material';
 import React from 'react'
 
 
@@ -8,19 +8,12 @@ const Cards2 = () => {
   return (
     <Grid>
       
-      <TextField fullWidth label="Search here" varient="filled" inputProps={{startAdornment:(<InputAdornment position='start'>
-        <Search/>
-      </InputAdornment>)}}>
+      <TextField fullWidth label="Search here" variant="filled"/>
       
-      </TextField>
-       
-      
-      
-      
-      
-      
-      
-    <Card sx={{ minWidth: 275 }}>
+    <CardActionArea>
+
+    
+    <Card  varient="outlined" sx={{ minWidth: 275 }}>
       <CardContent>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
           Case number 2-45
@@ -40,7 +33,9 @@ const Cards2 = () => {
         <Button size="small">Learn More</Button>
       </CardActions>
     </Card>
-    <Card sx={{ minWidth: 275, border:1 }}>
+    </CardActionArea>
+    <CardActionArea>    
+    <Card  varient="outlined"sx={{ minWidth: 275 }}>
       <CardContent>
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
           Case number 2-45
@@ -59,7 +54,10 @@ const Cards2 = () => {
       <CardActions>
         <Button size="small">Learn More</Button>
       </CardActions>
-    </Card></Grid>
+    </Card>
+    </CardActionArea>
+    
+    </Grid>
   )
 }
 
