@@ -5,30 +5,14 @@ import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
-import Link from '@mui/material/Link';
+import { Link } from 'react-router-dom';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
 
-function Copyright(props) {
-  return (
-    <Typography variant="body2" color="text.secondary" align="center" {...props}>
-      {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
 
-// TODO remove, this demo shouldn't need to reset the theme.
-
-const defaultTheme = createTheme();
 
 export default function SignIn() {
   const handleSubmit = (event) => {
@@ -41,7 +25,7 @@ export default function SignIn() {
   };
 
   return (
-    <ThemeProvider theme={defaultTheme}>
+   
       <Container component="main" maxWidth="xs">
         <CssBaseline />
         <Box
@@ -83,6 +67,7 @@ export default function SignIn() {
               control={<Checkbox value="remember" color="primary" />}
               label="Remember me"
             />
+            <Link to="/main">
             <Button
               type="submit"
               fullWidth
@@ -90,7 +75,7 @@ export default function SignIn() {
               sx={{ mt: 3, mb: 2 }}
             >
               Sign In
-            </Button>
+            </Button></Link>
             <Grid container>
               <Grid item xs>
                 <Link href="#" variant="body2">
@@ -98,15 +83,15 @@ export default function SignIn() {
                 </Link>
               </Grid>
               <Grid item>
-                <Link href="#" variant="body2">
+               <Link to="/signup">
                   {"Don't have an account? Sign Up"}
-                </Link>
+                  </Link>
               </Grid>
             </Grid>
           </Box>
         </Box>
-        <Copyright sx={{ mt: 8, mb: 4 }} />
+        
       </Container>
-    </ThemeProvider>
+    
   );
 }
