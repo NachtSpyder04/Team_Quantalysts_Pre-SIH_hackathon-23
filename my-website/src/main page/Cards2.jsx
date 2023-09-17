@@ -1,5 +1,5 @@
-import { Search } from '@mui/icons-material';
-import { Box, Button, Card, CardActions, CardContent, CardActionArea, Grid, InputAdornment, TextField, Typography } from '@mui/material';
+
+import {  Card, CardContent, CardActionArea, Grid, TextField, Typography } from '@mui/material';
 import React from 'react'
 
 
@@ -29,9 +29,7 @@ const Cards2 = () => {
           
         </Typography>
       </CardContent>
-      <CardActions>
-        <Button size="small">Learn More</Button>
-      </CardActions>
+      
     </Card>
     </CardActionArea>
     <CardActionArea>    
@@ -51,9 +49,7 @@ const Cards2 = () => {
           
         </Typography>
       </CardContent>
-      <CardActions>
-        <Button size="small">Learn More</Button>
-      </CardActions>
+    
     </Card>
     </CardActionArea>
     

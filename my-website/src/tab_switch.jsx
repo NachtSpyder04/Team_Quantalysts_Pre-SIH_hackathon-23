@@ -4,11 +4,10 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import Cards1 from './main page/Cards1';
+import Cards2 from './main page/Cards2';
+import Cards3 from './main page/Cards3';
 
-import Cards1 from './Cards1';
-import Cards2 from './Cards2';
-import Cards3 from './Cards3';
-import { Container } from '@mui/material';
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -54,9 +53,9 @@ export default function BasicTabs() {
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-          <Tab label="Item One" {...a11yProps(0)} />
-          <Tab label="Item Two" {...a11yProps(1)} />
-          <Tab label="Item Three" {...a11yProps(2)} />
+          <Tab label="Criminal" {...a11yProps(0)} />
+          <Tab label="Elder" {...a11yProps(1)} />
+          <Tab label="Banking" {...a11yProps(2)} />
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>

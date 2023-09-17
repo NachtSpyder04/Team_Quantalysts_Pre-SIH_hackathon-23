@@ -1,12 +1,13 @@
 import React from 'react'
-import Header from './header'
-import Tabswitch from './tab_switch'
+import Header from './main page/header'
+
 import { Box } from '@mui/material'
-import Cards from './Cards1'
+
 import BasicTabs from './tab_switch'
+import StickyFooter from './main page/stickyfooter'
 
 
-const Parent_component = () => {
+const Parentcomponentmainpage = () => {
   return (
     <div>
         
@@ -15,10 +16,13 @@ const Parent_component = () => {
         <Box fixed sx={{bgcolor:'#F1F1F1'}}>
             <BasicTabs/>   
         </Box>
+        <Box sx={{position:'stick'}}>
+        <StickyFooter/>
+        </Box>
         
         
     </div>
   )
 }
 
-export default Parent_component
+export default Parentcomponentmainpage

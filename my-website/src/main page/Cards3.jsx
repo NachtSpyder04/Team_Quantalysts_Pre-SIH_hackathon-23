@@ -1,4 +1,4 @@
-import { Box, Button, Card, CardActions, CardContent, Grid, Typography, TextField, CardActionArea} from '@mui/material';
+import {  Card, CardContent, Grid, Typography, TextField, CardActionArea} from '@mui/material';
 import React from 'react'
 
 
@@ -24,9 +24,7 @@ const Cards3 = () => {
           
         </Typography>
       </CardContent>
-      <CardActions>
-        <Button size="small">Learn More</Button>
-      </CardActions>
+     
     </Card>
     </CardActionArea>
     <CardActionArea>
@@ -46,9 +44,7 @@ const Cards3 = () => {
           
         </Typography>
       </CardContent>
-      <CardActions>
-        <Button size="small">Learn More</Button>
-      </CardActions>
+     
     </Card>
     </CardActionArea>
 
