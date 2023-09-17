@@ -1,0 +1,86 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Light gray background color */
+}
+
+header {
+    background-color: #333; /* Dark gray header background */
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.search-bar {
+    margin-top: 20px;
+}
+
+#searchInput {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#searchButton {
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue search button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#loginButton {
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue login button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.banner {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.banner img {
+    max-width: 100%;
+}
+
+.news-section {
+    background-color: #fff; /* White background for news section */
+    padding: 20px;
+}
+
+.news-section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.image-gallery img {
+    max-width: 75%;
+    margin: 10px;
+    border-radius: 5px;
+}
