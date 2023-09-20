@@ -20,7 +20,7 @@ export default function App() {
   return (
     <div style={{ textAlign: 'center', marginTop: '0px' }}>
       <SimpleImageSlider
-        width={1520}
+        width={1920}
         height={700}
         images={sliderImages}
         showNavs={true}
