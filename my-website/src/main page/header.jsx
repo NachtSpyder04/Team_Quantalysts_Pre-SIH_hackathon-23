@@ -1,4 +1,4 @@
-import { AppBar, Box, Button, CssBaseline, Tab, Tabs, Toolbar, Typography } from '@mui/material'
+import { AppBar, Box, Button, CssBaseline,  Toolbar, Typography } from '@mui/material'
 import React from 'react'
 import AddIcon from '@mui/icons-material/Add';
 import GavelIcon from '@mui/icons-material/Gavel';
@@ -16,7 +16,7 @@ const Header = () => {
         <Toolbar>
             <GavelIcon sx={{marginRight:'10px'}}/>
             <Typography>
-                MY_WEBSITE
+                CaseSahayak
             </Typography>
             <Box sx={{marginLeft:'auto'}}>
             <Link to="/add">

@@ -25,7 +25,7 @@ const Parentcomponenttitlepage = () => {
 
           }}>
             <Toolbar>
-             <Typography variant='h3'sx={{alignItems:'center'}}> One stop for all information about Pre-trials </Typography>
+             <Typography variant='h3'sx={{alignItems:'center'}}> Let's get started </Typography>
              </Toolbar>
              <BasicTabs/>
 
