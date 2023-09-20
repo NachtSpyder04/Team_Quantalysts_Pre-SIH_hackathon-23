@@ -6,7 +6,7 @@ Repository for the portal **'CaseSahayak'** made based on Problem Statement for 
 ### Steps 
 To run this site locally, you should have Node.js installed (v16 or higher) in your system. The Installation process is explained [here](https://nodejs.org/en/download).
 
-After installation, clone this repository and navigate to the folder in the terminal
+After installation, clone this repository and navigate to the frontend folder in the terminal
 
 ```
 npm install 
