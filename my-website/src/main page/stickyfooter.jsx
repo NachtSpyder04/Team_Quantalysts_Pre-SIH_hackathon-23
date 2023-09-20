@@ -17,6 +17,7 @@ export default function StickyFooter() {
             
             backgroundColor:'#000524' , 
               position:'fixed', left:0, bottom:0, width:1920,  
+              
           }}
         >
           
